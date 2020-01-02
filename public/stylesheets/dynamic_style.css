@@ -1,0 +1,28 @@
+html{
+    padding: 50px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+body{
+    width: 100%;
+    text-align: center;
+}
+#mytable table{
+    padding-left: 30%;
+    padding-right: 30%;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+#mytable td{
+    border: solid black 2px;
+    border-collapse: collapse;
+}
+#mytable thead{
+    color: red;
+    text-align: center;
+}
+#mytable tbody{
+    color: blue;
+    text-align: center;
+}
