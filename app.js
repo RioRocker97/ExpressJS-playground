@@ -31,7 +31,16 @@ app.use('/users', usersRouter);
 app.use('/dynamic',dynamicRouter);
 
 app.use(dynamicController);
-
+//////////////////////////////////////
+var mysql = require('mysql')
+var connection = mysql.createConnection({
+  host: 'localhost',
+  user: 'root',
+  password: 'chang1997',
+  database: 'carlist'
+})
+connection.connect();
+//////////////////////////////////////
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
