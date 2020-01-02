@@ -13,7 +13,10 @@ var dynamicRouter = require('./routes/dyna');
 //declare Controller
 var dynamicController = require('./controllers/control_dyna');
 
-//make web app with Express.js
+
+//delcare Database
+var myDatabase = require('./database')
+//initialize web app with Express.js
 var app = express();
 
 // view engine setup
@@ -32,7 +35,7 @@ app.use('/dynamic',dynamicRouter);
 
 app.use(dynamicController);
 //////////////////////////////////////
-var mysql = require('mysql')
+/*var mysql = require('mysql')
 var connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
@@ -40,6 +43,8 @@ var connection = mysql.createConnection({
   database: 'carlist'
 })
 connection.connect();
+*/
+app.use(myDatabase);
 //////////////////////////////////////
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
