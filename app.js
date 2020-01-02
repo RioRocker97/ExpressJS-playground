@@ -15,7 +15,7 @@ var dynamicController = require('./controllers/control_dyna');
 
 
 //delcare Database
-var myDatabase = require('./database')
+//var myDatabase = require('./database')
 //initialize web app with Express.js
 var app = express();
 
@@ -44,7 +44,7 @@ var connection = mysql.createConnection({
 })
 connection.connect();
 */
-app.use(myDatabase);
+//app.use(myDatabase);
 //////////////////////////////////////
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
