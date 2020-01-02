@@ -7,16 +7,19 @@ body{
     width: 100%;
     text-align: center;
 }
-#mytable table{
+#mytable{
     padding-left: 30%;
     padding-right: 30%;
+}
+#mytable table{
     width: 100%;
-    text-align: center;
     border-collapse: collapse;
 }
 #mytable td{
     border: solid black 2px;
-    border-collapse: collapse;
+}
+#mytable p{
+    margin: 5px;
 }
 #mytable thead{
     color: red;
@@ -25,4 +28,21 @@ body{
 #mytable tbody{
     color: blue;
     text-align: center;
+}
+#myform{
+    margin-top: 50px;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+#myform form{
+    text-align: left;
+}
+#myform input{
+    margin: 10px;
+    width: 300px;
+    height: 30px;
+}
+#myform input#submit{
+    width: 100px;
+    height: 30px;
 }
