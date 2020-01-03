@@ -1,4 +1,4 @@
-//initalize app with lots of thing i do not know
+//get external module that help me make web app
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -9,9 +9,10 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var dynamicRouter = require('./routes/dyna');
+var FormRouter = require('./routes/form');
 
 //declare Controller
-var dynamicController = require('./controllers/control_dyna');
+//var dynamicController = require('./controllers/control_dyna');
 
 
 //delcare Database
@@ -32,21 +33,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/dynamic',dynamicRouter);
+app.use('/form',FormRouter);
 
-app.use(dynamicController);
-//////////////////////////////////////
-/*var mysql = require('mysql')
-var connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: 'chang1997',
-  database: 'carlist'
-})
-connection.connect();
-*/
-//app.use(myDatabase);
-//////////////////////////////////////
-// catch 404 and forward to error handler
+//app.use(dynamicController); comment for disable messy controler
+
 app.use(function(req, res, next) {
   next(createError(404));
 });
