@@ -5,18 +5,12 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-//declare router 
+//declare router=controller
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var dynamicRouter = require('./routes/dyna');
 var FormRouter = require('./routes/form');
-
-//declare Controller
-//var dynamicController = require('./controllers/control_dyna');
-
-
-//delcare Database
-//var myDatabase = require('./database')
+//declare Model
 //initialize web app with Express.js
 var app = express();
 
@@ -34,8 +28,6 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/dynamic',dynamicRouter);
 app.use('/form',FormRouter);
-
-//app.use(dynamicController); comment for disable messy controler
 
 app.use(function(req, res, next) {
   next(createError(404));
