@@ -22,6 +22,6 @@ router.get('/',function(req,res,next){
             Carname: Cname,
             Caryear: Cyear
         });
-    })
+    });
 });
 module.exports = router;

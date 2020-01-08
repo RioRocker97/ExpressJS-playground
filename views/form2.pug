@@ -1,0 +1,17 @@
+doctype html
+html
+    title My Form Filling
+    link(rel='stylesheet', href='/stylesheets/dynamic_style.css')
+    link(href="https://fonts.googleapis.com/css?family=Raleway&display=swap",rel="stylesheet")
+body
+    h1 Fill the form here(Insert Into Table)
+    form(method='post',action='/form/f2/form_insert')
+        input(type='text',id='name',name='name',placeholder='Car Name')
+        br
+        input(type='text',id='brand',name='brand',placeholder='Car Brand')
+        br
+        input(type='text',id='year',name='year',placeholder='Manufacter Year',maxlength='4')
+        br
+        input(id='submit',type='submit')
+    footer
+        p this website was made by Express.js
