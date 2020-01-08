@@ -11,19 +11,26 @@ Every folder play important part of this website
 
 /bin -- this create server for this website
 
-/controllers -- this folder create Controller for this website (newly created)
+/model -- this folder is where my model stored
 
 /public -- this folder contain assets for this website
 
-/routes -- this folder contain route file for specify views for thsi website
+/routes -- this folder contain route file for specify views for this website (kinda Controller but not exactly A "Controller")
 
 /views -- this folder contain Views for this website
 
 app.js -- Main execution file for this website 
 
 # MVC Model
-M :grey_question: (i still don't know where it suppose to be)
+M :ok_hand:
 
 V :ok_hand:
 
-C :ok_hand: (newly created)
+C :grey_question: (Not sure if i should seperate it from Routes)
+
+# Basic Operation in this web app
+Static page :ok_hand:               Basic Routing :ok_hand:             Basic Form(GET and POST) :ok_hand:
+
+Connected to database :ok_hand:     Create :ok_hand:                    Read :ok_hand
+
+Update :speech_balloon:             Delete :speech_balloon:
