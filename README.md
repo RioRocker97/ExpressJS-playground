@@ -31,6 +31,8 @@ C :grey_question: (Not sure if i should seperate it from Routes)
 # Basic Operation in this web app
 Static page :ok_hand:               Basic Routing :ok_hand:             Basic Form(GET and POST) :ok_hand:
 
-Connected to database :ok_hand:     Create :ok_hand:                    Read :ok_hand
+Connected to database :ok_hand:    CRUD operation : :heavy_check_mark: :heavy_check_mark: :x: :x:
+
+Create :ok_hand:                    Read :ok_hand:
 
 Update :speech_balloon:             Delete :speech_balloon:
