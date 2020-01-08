@@ -6,7 +6,7 @@ var car = require('../model/car')
 var myCar = car.myData;
 var myDB = car.myDB;
 router.get('/',function(req,res,next){
-    myDB.query('SELECT * FROM car ',function(err,rows,fields){
+    myDB.query('SELECT * FROM car ORDER BY year ASC',function(err,rows,fields){
         if(err) throw err
         var Cbrand= [];
         var Cname = [];
