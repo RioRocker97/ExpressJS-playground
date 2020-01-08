@@ -24,6 +24,15 @@ body
                         p #{d2}
                     td 
                         p #{d3}
+            -var n = 0
+            while n<db1.length
+                tr
+                    td
+                        p Default Name
+                    td
+                        p=db1[n++]
+                    td
+                        p Default Year
 
     footer
         p this website was made by Express.js
