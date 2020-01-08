@@ -17,22 +17,19 @@ body
                     td 
                         p Manufacter Year
             tbody
-                tr
-                    td 
-                        p #{d1}
-                    td 
-                        p #{d2}
-                    td 
-                        p #{d3}
             -var n = 0
-            while n<db1.length
+            while n<Carname.length
                 tr
                     td
-                        p Default Name
+                        p=Carbrand[n]
                     td
-                        p=db1[n++]
+                        p=Carname[n]
                     td
-                        p Default Year
-
+                        p=Caryear[n]
+                -n++
+    div(id='CRED_section')
+        h2 These area should have basic CRED operation for this table
+        a(href='/') Homepage
+        a(href='/form') Form area 
     footer
         p this website was made by Express.js

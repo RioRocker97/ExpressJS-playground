@@ -8,16 +8,19 @@ var myDB = car.myDB;
 router.get('/',function(req,res,next){
     myDB.query('SELECT * FROM car ',function(err,rows,fields){
         if(err) throw err
-        var carDB= [];
-        for(var i=0;i<5;i++){
-            carDB[i]=rows[i].name;
+        var Cbrand= [];
+        var Cname = [];
+        var Cyear = [];
+        console.log(rows[5])
+        for(var i=0;i<rows.length;i++){
+            Cbrand[i]=rows[i].brand;
+            Cname[i]=rows[i].name;
+            Cyear[i]=rows[i].year;
         }
-        console.log(carDB);
         res.render('dynamic1',{
-            d1:myCar.d1,
-            d2:myCar.d2,
-            d3:myCar.d3,
-            db1:carDB
+            Carbrand: Cbrand,
+            Carname: Cname,
+            Caryear: Cyear
         });
     })
 });
