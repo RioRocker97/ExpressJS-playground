@@ -8,5 +8,8 @@ router.get('/me', function(req, res, next) {
 router.get('/',function(req,res,next){
   res.render('static_welcome');
 });
+router.get('/newapp',function(req,res,next){
+  res.render('my_app');
+})
 
 module.exports = router;
