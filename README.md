@@ -36,3 +36,5 @@ Connected to database :ok_hand:    CRUD operation : :heavy_check_mark: :heavy_ch
 Create :ok_hand:                    Read :ok_hand:
 
 Update :speech_balloon:             Delete :speech_balloon:
+# New feature
+Interactive :speech_balloon:  animation :ok_hand:    
